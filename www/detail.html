@@ -1,0 +1,104 @@
+﻿<html>
+ <head>
+	<title></title>
+	
+		<meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta name="format-detection" content="telephone=no">
+ 		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  
+  
+
+  
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		   
+		<link rel="stylesheet" href="css/themes/A.min.css" />
+		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+		<script type="text/javascript" src="js/detailIndex.js"></script>
+		<script type="text/javascript" src="js/myindex.js"></script>
+		<link rel="stylesheet" href="css/myindex.css" />
+
+		   
+  
+	
+	
+ </head>
+ <body>
+	<div data-role="page" id="home"  data-theme="a">
+		  <div data-role="header">
+			<a href="#" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all ui-btn-left" data-rel="back" title="Go back"></a>
+			<h1>상세 정보</h1>
+		  </div>
+
+		  <div data-role="content">
+		  
+			<div id="detail_div"></div>
+			
+			<ul data-role="listview" id="detail_ul" data-inset="true">
+			</ul>
+			<h4 style='background-color:#b4b4b4' style="padding:0px;  margin:0px;">약력</h4>
+			<div id="detail_mem"></div>
+			
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" id="navbar-1">
+				<ul>
+					<li><a href="#panelLeft">메뉴</a></li>
+					<li><a href="index.html" rel="external">홈</a></li>
+					<li><a href="seat.html" rel="external">의석수 현황</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div data-role="panel" id="panelLeft" data-position="left" data-display="overlay" data-theme="a" width="200px" >
+			<h2 style="float:left;">상세 검색</h2>
+			
+			
+			<ul data-role="listview" data-divider-theme="a" id="panel_list"  style="clear:both">
+			
+	
+				<li data-role="list-divider">정당별</li>
+				<li><a href="#" onClick="poly_val('101186','자유한국당')">자유한국당</a></li>
+				<li><a href="#" onClick="poly_val('101182','더불어민주당')">더불어민주당</a></li>
+				<li><a href="#" onClick="poly_val('101183','국민의당')">국민의당</a></li>
+				<li><a href="#" onClick="poly_val('101180','정의당')">정의당</a></li>
+				<li><a href="#" onClick="poly_val('101030','무소속')">무소속</a></li>
+				<li data-role="list-divider">지역별</li>
+				<li><a href="#" onClick="local_val('021001','서울')">서울</a></li>
+				<li><a href="#" onClick="local_val('021002','부산')">부산</a></li>
+				<li><a href="#" onClick="local_val('021003','대구')">대구</a></li>
+				<li><a href="#" onClick="local_val('021004','인천')">인천</a></li>
+				<li><a href="#" onClick="local_val('021005','광주')">광주</a></li>
+				<li><a href="#" onClick="local_val('021006','대전')">대전</a></li>
+				<li><a href="#" onClick="local_val('021007','울산')">울산</a></li>
+				<li><a href="#" onClick="local_val('021008','경기')">경기</a></li>
+				<li><a href="#" onClick="local_val('021009','강원')">강원</a></li>
+				<li><a href="#" onClick="local_val('021010','충북')">충북</a></li>
+				<li><a href="#" onClick="local_val('021011','충남')">충남</a></li>
+				<li><a href="#" onClick="local_val('021012','전북')">전북</a></li>
+				<li><a href="#" onClick="local_val('021013','전남')">전남</a></li>
+				<li><a href="#" onClick="local_val('021014','경북')">경북</a></li>
+				<li><a href="#" onClick="local_val('021015','경남')">경남</a></li>
+				<li><a href="#" onClick="local_val('021016','제주')">제주</a></li>
+				<li><a href="#" onClick="local_val('021017','기타')">기타</a></li>
+				<li><a href="#" onClick="local_val('021168','세종')">세종</a></li>
+			</ul>
+		</div>
+		
+		
+		
+	</div>
+ </body>
+
+ 
+ 
+ 
+
+
+</html>
